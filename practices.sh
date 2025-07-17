@@ -199,7 +199,7 @@ Practices10(){
 
 	can02=$(((year-2015+1)%10))
 	chi02=$(((year-2015+7)%12))
-
+	echo ""
 	echo "${can[can02]} ${chi[chi02]}"
 }
 
