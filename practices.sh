@@ -181,10 +181,10 @@ Practices09(){
     NC="\033[0m"
 
     case $alert in
-        "-i") echo "${GREEN}INFO:: ${2}";;
-        "-d") echo "${YELLOW}DEBUG:: ${2}";;
-        "-w") echo "${CYAN}WARN:: ${2}";;
-        "-e") echo "${RED}ERROR:: ${2}";;
+        "-i") echo -e "${GREEN}INFO:: ${2}";;
+        "-d") echo -e "${YELLOW}DEBUG:: ${2}";;
+        "-w") echo -e "${CYAN}WARN:: ${2}";;
+        "-e") echo -e "${RED}ERROR:: ${2}";;
     esac 
 }
 
