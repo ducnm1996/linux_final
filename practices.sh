@@ -37,6 +37,7 @@ echo "writing a simple curl to the endpoint and get the response code of command
 # example curl  google-123.com
 # with dynamic url
 #
+echo ""
 curl ${1} > /dev/null 2>&1
 echo "status code $?"
 }
@@ -46,7 +47,7 @@ Practices03(){
 echo "Writing a simple program to allow enter 2 number (interger number (n > 0) and run a + b / a : b / a * b and a - b)
 # print the result to screen/"
 #
-
+echo ""
 echo "please enter number a"
 read a
 echo "please enter number b"
@@ -86,7 +87,7 @@ fi
 Practices05(){
 	echo "write an script to process the `ls` command and list out all files in folder"
 	echo ""
-	path_folder="/Practices/practices/"
+	path_folder="/home/ducnm/linux_final"
 
 	list_folder=$(ls $path_folder)
 	for folder in $list_folder
