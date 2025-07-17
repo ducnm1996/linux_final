@@ -3,7 +3,7 @@ echo ""
 
 for year in {1990..2020}
 do
-lunar_name=$(./lunar_year $year)
+lunar_name=$(./linux_final/pratices/practices11.sh lunar_year $year)
 
 printf "$year" "$lunar_name"
 
