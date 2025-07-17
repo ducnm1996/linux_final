@@ -8,6 +8,7 @@ Show_practices(){
 	echo -e "Pratices 07"
 	echo -e "Pratices 08"
 	echo -e "Pratices 09"
+	echo -e "Nhấn q hoặc Q để thoát chương trình"
 }
 
 pause_screen() {
@@ -32,7 +33,7 @@ cat /etc/passwd | cut -d':' -f1
 
 Practices02(){
 #
-# writing a simple curl to the endpoint and get the response code of command and print it out to screen
+echo "writing a simple curl to the endpoint and get the response code of command and print it out to screen"
 # example curl  google-123.com
 # with dynamic url
 #
@@ -42,8 +43,8 @@ echo "status code $?"
 
 Practices03(){
 #
-#   Writing a simple program to allow enter 2 number (interger number (n > 0) and run a + b / a : b / a * b and a - b)
-# print the result to screen/
+echo "Writing a simple program to allow enter 2 number (interger number (n > 0) and run a + b / a : b / a * b and a - b)
+# print the result to screen/"
 #
 
 echo "please enter number a"
@@ -55,13 +56,19 @@ echo "${a} + ${b} = `expr ${a} + ${b}`"
 echo "${a} - ${b} = `expr ${a} - ${b}`"
 echo "${a} * ${b} = `expr ${a} \* ${b}`"
 echo "${a} / ${b} = `expr ${a} / ${b}`"
+}
 
-thumuc:
-    tep1
-    tep2 
-thucmucb:
-    temp3
-    temp4
+Practices04(){
+#
+# Condition if else 
+#
+if [[ $1 == 1 ]]; then 
+    echo "done with 1"
+elif [[ $1 == 2 ]]; then
+    echo "done with 2"
+else
+    echo "done with nothing"
+fi 
 }
 
 
@@ -87,6 +94,11 @@ case $choice in
 
 	3)
 	Practices03
+	pause_screen
+	;;
+
+	4)
+	Practices04
 	pause_screen
 	;;
 
