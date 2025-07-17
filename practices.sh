@@ -86,7 +86,7 @@ fi
 Practices05(){
 	echo "write an script to process the `ls` command and list out all files in folder"
 	echo ""
-	path_folder="/mnt/d/trash/resources/containerization"
+	path_folder="/Practices/practices/"
 
 	list_folder=$(ls $path_folder)
 	for folder in $list_folder
