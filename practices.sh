@@ -59,12 +59,15 @@ echo "${a} / ${b} = `expr ${a} / ${b}`"
 }
 
 Practices04(){
+echo " so sánh số với 1"
+echo "Nhap so: "
+read num
 #
-# Condition if else 
+echo "Condition if else" 
 #
-if [[ $1 == 1 ]]; then 
+if [[ $num == 1 ]]; then 
     echo "done with 1"
-elif [[ $1 == 2 ]]; then
+elif [[ $num == 2 ]]; then
     echo "done with 2"
 else
     echo "done with nothing"
