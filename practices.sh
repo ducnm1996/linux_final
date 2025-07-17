@@ -8,6 +8,7 @@ Show_practices(){
 	echo -e "Pratices 07"
 	echo -e "Pratices 08"
 	echo -e "Pratices 09"
+	echo -e "Pratices 10"
 	echo -e "Nhấn q hoặc Q để thoát chương trình"
 }
 
@@ -188,7 +189,19 @@ Practices09(){
     esac 
 }
 
+Practices10(){
+	echo "Nhập năm cần tính"
+	echo ""
+	read year
 
+	can=("Giáp" "Ất" "Bính" "Đinh" "Mậu" "Kỷ" "Canh" "Tân" "Nhâm" "Quý")
+	chi=("Tý" "Sửu" "Dần" "Mão" "Thìn" "Tị" "Ngọ" "Mùi" "Thân" "Dậu" "Tuất" "Hợi")
+
+	can02=$(((year-2015+1)%10))
+	chi02=$(((year-2015+7)%12))
+
+	echo "${can[can02]} ${chi[chi02]}"
+}
 
 while true;
 do
@@ -241,6 +254,11 @@ case $choice in
 
 	9)
 	Practices09
+	pause_screen
+	;;
+
+	10)
+	Practices10
 	pause_screen
 	;;
 
