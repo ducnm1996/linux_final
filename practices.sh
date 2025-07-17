@@ -97,6 +97,25 @@ Practices05(){
 	done 
 }
 
+Practices06(){
+	echo "enter a file from keyboard and validate -w -r -x of file"
+	echo ""
+	echo "test wrx file: $1"
+	if [ -r $1 ]; then 
+    echo "file with enable -r"
+	fi 
+
+	if [ -x $1 ]; then 
+		echo "file with enable -x"
+	fi 
+
+	if [ -w $1 ]; then 
+		echo "file with enable -w"
+	fi 
+
+	ls -lna  $1
+}
+
 
 
 while true;
@@ -130,6 +149,11 @@ case $choice in
 
 	5)
 	Practices05
+	pause_screen
+	;;
+
+	6)
+	Practices06
 	pause_screen
 	;;
 
