@@ -167,6 +167,27 @@ Practices08(){
 	esac
 }
 
+Practices09(){
+	echo "using the function in shell"
+	echo ""
+	echo "Nhập giá trị: -i, -d, -w, -e"
+	read alert
+
+	    # Color codes
+    RED="\033[0;31m"
+    GREEN="\033[0;32m"
+    CYAN="\033[0;36m"
+    YELLOW="\033[1;33m"
+    NC="\033[0m"
+
+    case $alert in
+        "-i") echo "${GREEN}INFO:: ${2}";;
+        "-d") echo "${YELLOW}DEBUG:: ${2}";;
+        "-w") echo "${CYAN}WARN:: ${2}";;
+        "-e") echo "${RED}ERROR:: ${2}";;
+    esac 
+}
+
 
 while true;
 do
@@ -214,6 +235,11 @@ case $choice in
 
 	8)
 	Practices08
+	pause_screen
+	;;
+
+	9)
+	Practices09
 	pause_screen
 	;;
 
