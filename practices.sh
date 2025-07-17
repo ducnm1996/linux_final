@@ -2,6 +2,12 @@ Show_practices(){
 	echo -e "Pratices 01"
 	echo -e "Pratices 02"
 	echo -e "Pratices 03"
+	echo -e "Pratices 04"
+	echo -e "Pratices 05"
+	echo -e "Pratices 06"
+	echo -e "Pratices 07"
+	echo -e "Pratices 08"
+	echo -e "Pratices 09"
 }
 
 pause_screen() {
