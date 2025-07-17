@@ -59,9 +59,6 @@ echo "${a} / ${b} = `expr ${a} / ${b}`"
 }
 
 Practices04(){
-echo " so sánh số với 1"
-echo "Nhap so: "
-read num
 #
 echo "Condition if else" 
 #
@@ -72,7 +69,11 @@ elif [[ $num == 2 ]]; then
 else
     echo "done with nothing"
 fi'
-
+echo ""
+echo " so sánh số với 1"
+echo "Nhap so: "
+read num
+echo ""
 if [[ $num == 1 ]]; then 
     echo "done with 1"
 elif [[ $num == 2 ]]; then
@@ -80,6 +81,19 @@ elif [[ $num == 2 ]]; then
 else
     echo "done with nothing"
 fi 
+}
+
+Practices05(){
+	echo "write an script to process the `ls` command and list out all files in folder"
+	echo ""
+	path_folder="/mnt/d/trash/resources/containerization"
+
+	list_folder=$(ls $path_folder)
+	for folder in $list_folder
+	do 
+		echo "listing item in folder: ${folder}"
+		ls -lna "${path_folder}/${folder}"
+	done 
 }
 
 
@@ -110,6 +124,11 @@ case $choice in
 
 	4)
 	Practices04
+	pause_screen
+	;;
+
+	5)
+	Practices05
 	pause_screen
 	;;
 
