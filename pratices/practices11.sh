@@ -5,6 +5,6 @@ for year in {1990..2020}
 do
 lunar_name=$(./linux_final/pratices/practices10.sh $year)
 
-printf "$year" "$lunar_name"
+printf "%-12s | %-15s\n" "$year" "$lunar_name"
 
 done
