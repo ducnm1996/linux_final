@@ -65,6 +65,14 @@ read num
 #
 echo "Condition if else" 
 #
+echo 'if [[ $num == 1 ]]; then 
+    echo "done with 1"
+elif [[ $num == 2 ]]; then
+    echo "done with 2"
+else
+    echo "done with nothing"
+fi'
+
 if [[ $num == 1 ]]; then 
     echo "done with 1"
 elif [[ $num == 2 ]]; then
