@@ -151,6 +151,22 @@ Practices07(){
 	cd ${current_working_dict}
 }
 
+Practices08(){
+	echo "identifier the item of object, using case to catch"
+	echo ""
+	echo "recieved item: $1"
+	echo "info:: procesing to identifier object"
+
+	case $1 in
+
+		"cat") echo "This is mew mew object";;
+		"dog") echo "This is not mew mew object - dog ";;
+		"pew") echo "This is gun, pew pew ";;
+		"human") echo "This is human, human object";;
+		*) echo "Can not identifier the object" ;;
+	esac
+}
+
 
 while true;
 do
@@ -193,6 +209,11 @@ case $choice in
 
 	7)
 	Practices07
+	pause_screen
+	;;
+
+	8)
+	Practices08
 	pause_screen
 	;;
 
